@@ -1,0 +1,453 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <title>海外婚紗攝影首選－布拉格婚紗攝影_瑪莎LiLi婚紗館</title>
+    <meta name='keywords' content="旅遊婚紗,旅拍,影婚紗相">
+    <meta name="description" content="到台灣拍婚紗一日輕旅行，贈送專車接送與側拍攝影服務。">
+    
+    <!-- Layout Css -->
+    <link rel="stylesheet" type="text/css" href="Css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="Css/prague.css" />
+    
+    <!-- jQuery -->
+    <script src="Js/jquery-2.1.0.min.js"></script>
+    
+    <script type="text/javascript">
+    $(function () {
+        //+展開 -收合
+		var eventMode = '';
+		var boxClick = false;
+		var boxAction = false;
+		$('div.info-box').on('touchstart touchmove touchend click',function(event) {
+			var boxIndex = $(this).index();
+			var objBoxItem = $('div.info-item:eq('+boxIndex+')');
+			var boxDisplay = objBoxItem.css('display');
+			
+			switch(event.type) {
+				case 'touchstart':
+					eventMode = 'touch';
+					boxClick = true;
+					break;
+				case 'touchmove':
+					boxClick = false;
+					break;
+				case 'touchend':
+					if (boxClick) {
+						boxAction = true;
+					}
+					break;
+				case 'click':
+					if (eventMode != 'touch') {
+						boxAction = true;
+					}
+					break;
+			}
+			
+			if (boxAction) {
+				boxAction = false;
+				$('div.info-item:not('+boxIndex+')').slideUp();
+				
+				if (boxDisplay == 'block') {
+					objBoxItem.slideUp();
+				}else {
+					objBoxItem.slideDown(function() {
+						$('html,body').animate({scrollTop:objBoxItem.offset().top},800);
+					});
+				}
+			}
+		});
+    });
+    </script>
+    
+    <!-- 大景幻燈片 Css -->
+    <link rel="stylesheet" type="text/css" href="Css/slides/normalize.css" />
+	<link rel="stylesheet" href="Css/slides/style.css">
+   
+    <!--  圖片畫廊 lightbox CSS -->
+    <link rel="stylesheet" href="Css/swipebox.css">
+    
+</head>
+<body>
+    <header>
+        <div class="vision">
+            <img src="images/vision-title.png" alt="布拉格拍婚紗_布拉格title">
+        </div>
+        <div class="person"></div>
+        <div class="sign">
+            <span class="date">6/26(一)</span><span class="date">6/27(二)</span><span class="date">6/28(三)</span><span class="date">6/29(四)</span>
+        </div>
+        <div class="sign-s">
+            <dl>
+                <dd>
+                    <img class="title1-size1" src="images/Sign_up-title1.jpg" alt="海外婚紗_4/21報名截止 四對限定">
+                </dd>
+                <dd>
+                    <img class="title1-size3" src="images/Sign_up-title3.jpg" alt="海外婚紗_4/21報名截止 四對限定"><br>
+                    <span class="date">6/26(一)</span><span class="date">6/27(二)</span><span class="date">6/28(三)</span><span class="date">6/29(四)</span>
+                </dd>
+            </dl>
+            <img class="title1-size2" src="images/Sign_up-title2.jpg" alt="海外婚紗_2017瑪莎LiLi年度海外度假婚紗">
+        </div>
+    </header>
+
+    <section class="stroke_info">
+       <div id="info-btn1" class="info-box effect-1">
+           <div class="image-box">
+               <img src="images/stroke_info_img1.jpg" alt="布拉格拍婚紗_婚紗攝影">
+           </div>
+           <div class="text-desc">
+               <div>
+                   <img src="images/icon1.svg" alt=""><br>
+                   <a href="javascript:void(0)" class="view-btn">VIEW MORE</a>
+               </div>
+           </div>
+
+           <img src="images/stroke_info_label1.png" alt="布拉格拍婚紗_婚紗攝影" class="label1">
+           <div class="view-box">
+               <img src="images/touch_gif.gif" alt="" class="label2">
+           </div>
+       </div>
+       <div id="info-btn2" class="info-box effect-1">
+           <div class="image-box">
+               <img src="images/stroke_info_img2.jpg" alt="布拉格拍婚紗_蜜月旅行">
+           </div>
+           <div class="text-desc">
+               <div>
+                   <img src="images/icon1.svg" alt=""><br>
+                   <a href="javascript:void(0)" class="view-btn">VIEW MORE</a>
+               </div>
+           </div>
+
+           <img src="images/stroke_info_label2.png" alt="布拉格拍婚紗_蜜月旅行" class="label1">
+           <div class="view-box">
+               <img src="images/touch_gif.gif" alt="" class="label2">
+           </div>
+       </div>
+       <div id="info-btn3" class="info-box effect-1">
+           <div class="image-box">
+               <img src="images/stroke_info_img3.jpg" alt="布拉格拍婚紗_自拍珍藏">
+           </div>
+           <div class="text-desc">
+               <div>
+                   <img src="images/icon1.svg" alt=""><br>
+                   <a href="javascript:void(0)" class="view-btn">VIEW MORE</a>
+               </div>
+           </div>
+
+           <img src="images/stroke_info_label3.png" alt="布拉格拍婚紗_自拍珍藏" class="label1">
+           <div class="view-box">
+               <img src="images/touch_gif.gif" alt="" class="label2">
+           </div>
+       </div>
+
+       <!-- 婚紗攝影展開說明 -->
+       <div id="item1" class="info-item">
+           <ul>
+               <li>
+                   <div class="info-item-content1">
+                       <img src="images/info_item-title1.jpg" alt="布拉格拍婚紗_婚紗攝影">
+                       <ul>
+                           <li>全數照片檔案 (至少200張)</li>
+                           <li>新娘指定禮服2套/自備便服1套</li>
+                           <li>新娘整體拍攝造型妝髮</li>
+                           <li>新郎拍攝穿搭造型妝髮</li>
+                           <li>布拉格外景攝影</li>
+                           <li>瑪莎LiLi首席攝影團隊全程一對一服務</li>
+                           <li>曉山青系列禮服</li>
+                           <li>造型師全程外景跟拍</li>
+                       </ul>
+                   </div>
+               </li>
+               <li class="shadow">
+                   <!--<img class="shadow" src="images/info_item-shadow.jpg" alt="布拉格拍婚紗_婚紗攝影">-->
+               </li>
+           </ul>
+       </div>
+
+       <!-- 蜜月旅行展開說明 -->
+       <div id="item2" class="info-item">
+           <ul>
+               <li>
+                   <div class="info-item-content2">
+                       <img src="images/info_item-title2.jpg" alt="布拉格拍婚紗_蜜月旅行">
+                       <ul>
+                           <li>布拉格The ICON Hotel異國浪漫住宿三日(或同等級飯店)</li>
+                           <li>攝影當日午餐兩客</li>
+                       </ul>
+                   </div>
+               </li>
+               <li class="shadow">
+                   <!--<img class="shadow" src="images/info_item-shadow.jpg" alt="布拉格拍婚紗_婚紗攝影">-->
+               </li>
+           </ul>
+       </div>
+
+       <!-- 自拍珍藏展開說明 -->
+       <div id="item3" class="info-item">
+           <ul>
+               <li>
+                   <div class="info-item-content3">
+                       <img src="images/info_item-title3.jpg" alt="布拉格拍婚紗_自拍珍藏">
+                       <ul>
+                           <li>將masaLiLi 2017布拉格海外度假婚紗旅程自拍的照片整理後提交給攝影師製作30組特別製作檔案。</li>
+                           <li>可加購NT.3000 (原價NT.6800) 一拍即盒-復刻年輪版 運費需另計</li>
+                           <li>瑪莎指定款禮服一件(拍照用，回國後寄回門市即可)</li>
+                       </ul>
+                   </div>
+               </li>
+               <li class="shadow">
+                   <!--<img class="shadow" src="images/info_item-shadow.jpg" alt="布拉格拍婚紗_婚紗攝影">-->
+               </li>
+           </ul>
+       </div>
+
+    </section>
+
+    <!-- 大景幻燈片區塊 -->
+    <section>
+        <div class="demo-container">
+          <div class="slides">
+            <div class="slide-item slide-1">
+              <div class="bg bg-1">
+                <span class="hint">每個街景都被人們列為世界文化遺產，滿是故事的地方。</span>
+              </div>
+            </div>
+            <div class="slide-item slide-2">
+              <div class="bg bg-2">
+                <span class="hint">聆聽街頭藝人歡奏，低頭與愜意優游的白天鵝揮手</span>
+              </div>
+            </div>
+            <div class="slide-item slide-3">
+              <div class="bg bg-3">
+                <span class="hint">愛情夢幻嫁期，在布拉格初遇</span>
+              </div>
+            </div>
+          </div>
+          <div class="slide-indicator">
+            <div where="1" class="dot dot-1"></div>
+            <div where="2" class="dot dot-2"></div>
+            <div where="3" class="dot dot-3"></div>
+          </div>
+          <div class="property-hack"></div>
+        </div>
+    </section>
+
+    <section id="box-container">
+        <ul>
+            <li class="box">
+                <a href="Photo/Gallery-img1.jpg" class="swipebox" title=" ">
+                    <img src="Photo/Gallery-img1.jpg" alt="image">
+                </a>
+            </li>
+            <li class="box">
+                <a href="Photo/Gallery-img2.jpg" class="swipebox" title=" ">
+                    <img src="Photo/Gallery-img2.jpg" alt="image">
+                </a>
+            </li>
+            <li class="box">
+                <a href="Photo/Gallery-img3.jpg" class="swipebox" title=" ">
+                    <img src="Photo/Gallery-img3.jpg" alt="image">
+                </a>
+            </li>
+            <li class="box">
+                <a href="Photo/Gallery-img4.jpg" class="swipebox" title=" ">
+                    <img src="Photo/Gallery-img4.jpg" alt="image">
+                </a>
+            </li>
+            <li class="box">
+                <a href="Photo/Gallery-img5.jpg" class="swipebox" title=" ">
+                    <img src="Photo/Gallery-img5.jpg" alt="image">
+                </a>
+            </li>
+            <li class="box">
+                <a href="Photo/Gallery-img6.jpg" class="swipebox" title=" ">
+                    <img src="Photo/Gallery-img6.jpg" alt="image">
+                </a>
+            </li>
+            <li class="box">
+                <a href="Photo/Gallery-img7.jpg" class="swipebox" title=" ">
+                    <img src="Photo/Gallery-img7.jpg" alt="image">
+                </a>
+            </li>
+            <li class="box">
+                <a href="Photo/Gallery-img8.jpg" class="swipebox" title=" ">
+                    <img src="Photo/Gallery-img8.jpg" alt="image">
+                </a>
+            </li>
+        </ul>
+    </section>
+    
+    <section id="price-box">
+        <h1>婚紗攝影+蜜月旅行+分享紀錄</h1>
+        <p class="price-subtitle">見證只屬於你與他的幸福詩篇</p>
+        <ul>
+            <li>
+                <img src="images/price-img2.jpg" alt="海外婚紗_瑪莎LiLi VIP會員獨享價NT.59800">
+                <div class="raise">
+                    <span class="font-s">( 包套市場平均價格 <strong>NT.90,000</strong> )</span><br><span class="font-red">※ 以上價格不含新人自身機票交通費用。</span>
+                </div>
+            </li>
+            <li class="price">
+                <img src="images/price-img3.jpg" alt="海外婚紗_瑪莎LiLi VIP會員獨享價NT.59800">
+                <div class="raise-m">
+                    <span class="font-s">( 包套市場平均價格 <strong>NT.90,000</strong> )</span><br><span class="font-red">※ 以上價格不含新人自身機票交通費用。</span>
+                </div>
+            </li>
+        </ul>
+    </section>
+    
+    <footer>
+        masaLiLi 版權所有 Copyright © masaLiLi | EasyPhoto 易攝網行銷資訊
+    </footer>
+
+
+
+    <!-- 根據滑鼠位置移動背景圖片 -->
+	<script type="text/javascript" src="Js/backgroundMove/jquery.backgroundMove.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			//$('.vision').backgroundMove({ movementStrength:'50' });
+		})
+	</script>
+	
+	<!-- 大景幻燈片 Jacascript -->
+    <script type="text/javascript">
+		$(document).ready(function() {
+		 var curX = 0;
+		 var diff = 0;
+		 var curSlide = 1;
+		 var busy = false;
+		 var flag = false;
+		 var winW = parseInt($(".demo-container").css("width"));
+		 var animationTime = parseFloat($(".property-hack").css("height"));
+		 var k = parseFloat($(".property-hack").css("width")) / 100;
+		 var numOfSlides = $(".slide-item").length;
+		 var autoChangeTime = parseFloat($(".property-hack").css("margin-left"));
+		 var autoChangeInterval = setInterval(autoChangeFunction, autoChangeTime);
+		 $(".slide-1 .overlay").addClass("overlay-active");
+		 $(window).on("keydown", function(event) {
+		  if (!busy) {
+		   if (event.which == 37 && curSlide >= 2) {
+		    curSlide--;
+		    animation();
+		   }
+		   if (event.which == 39 && curSlide < numOfSlides) {
+		    curSlide++;
+		    animation();
+		   }
+		  }
+		 });
+		 $(".dot").on("click", function() {
+		  if (!busy) {   
+		   curSlide = parseInt($(this).attr("where"));
+		   animation(true);   
+		  }
+		 });
+		 $(document).on("mousedown touchstart", ".slides", function(event) {
+		  if (!busy) {
+		   clearInterval(autoChangeInterval);
+		   flag = true;
+		   $(".demo-container").addClass("grabbing");
+		   winW = parseInt($(".demo-container").css("width"));
+		   if (event.originalEvent.touches) var stX = event.originalEvent.touches[0].pageX;
+		   else var stX = event.pageX;
+		   $(document).on("mousemove touchmove", function(event) {
+		    if (event.originalEvent.touches) var msX = event.originalEvent.touches[0].pageX;
+		    else var msX = event.pageX;
+		    diff = (msX - stX) / winW * 100 / k;
+		    if (diff > 110) diff = 110;
+		    if (diff < -110) diff = -110;
+		    if (curSlide == 1) {
+		     if (diff > 0) diff /= 10;
+		     if (diff > 5) diff = 5;
+		    }
+		    if (curSlide == numOfSlides) {
+		     if (diff < 0) diff /= 10;
+		     if (diff < -5) diff = -5;
+		    }
+		    $(".slides").css("transform", "translate3d(" + (diff + curX) + "vw, 0, 0)");
+		    $(".bg-" + curSlide).css("transform", "translate3d(" + (-diff / 2) + "vw, 0, 0)");
+		    $(".bg-" + (curSlide + 1)).css("transform", "translate3d(" + (-50 - diff / 2) + "vw, 0, 0)");
+		    $(".bg-" + (curSlide - 1)).css("transform", "translate3d(" + (50 - diff / 2) + "vw, 0, 0)");
+		   });
+		  }
+		 });
+		 $(document).on("mouseup touchend", function(event) {
+		  if (flag) {
+		   if (diff * k < -30) curSlide++;
+		   else if (diff * k > 30)
+		    curSlide--;
+		   animation();
+		   diff = 0;
+		   $(document).off("mousemove");
+		   $(".demo-container").removeClass("grabbing");
+		   flag = false;
+		  }
+		 });
+
+		 function animation(r) {
+		  busy = true;
+		  curX = (-curSlide + 1) * 100;
+		  $(".overlay").removeClass("overlay-active");  
+		  $(".slide-" + curSlide + " .overlay").addClass("overlay-active");
+		  $(".dot").css("opacity", "0.3");
+		  $(".dot-" + curSlide).css("opacity", "1");
+		  $(".slides").addClass("animation");
+		  if (!r)  $(".bg").addClass("animation");
+		  else $(".bg").css("transform", "translate3d(0, 0, 0)");
+		  $(".slides").css("transform", "translate3d(-" + (curSlide - 1) * 100 + "vw, 0, 0)");
+		  $(".bg").css("transform", "translate3d(0, 0, 0)");
+		  if (!r) {
+		   $(".bg-" + (curSlide + 1) + ", .bg-" + (curSlide + 2)).css("transform", "translate3d(-50vw, 0, 0)");
+		   $(".bg-" + (curSlide - 1) + ", .bg-" + (curSlide - 2)).css("transform", "translate3d(50vw, 0, 0)");
+		  }
+		  clearInterval(autoChangeInterval);
+		  setTimeout(function() {
+		   $(".slides, .bg").removeClass("animation");
+		   busy = false;
+		   $(".bg-" + (curSlide + 1)).css("transform", "translate3d(-50vw, 0, 0)");   
+		   autoChangeInterval = setInterval(autoChangeFunction, autoChangeTime);
+		  }, animationTime);
+		 }
+
+		 function autoChangeFunction() {
+		  if (curSlide != numOfSlides) {
+		   curSlide++;
+		   animation();
+		  }
+		  else {
+		   curSlide = 1;
+		   animation(true);
+		  }
+		 }
+		});
+	</script>
+	
+	
+	<!--  圖片畫廊 lightbox CSS -->
+    <script src="Js/swipebox/ios-orientationchange-fix.js"></script>
+    <script src="Js/swipebox/jquery.swipebox.js"></script>
+    <script type="text/javascript">
+        $( document ).ready(function() {
+
+                /* Basic Gallery */
+                $( '.swipebox' ).swipebox();
+
+                /* Video */
+                $( '.swipebox-video' ).swipebox();
+
+                /* Dynamic Gallery */
+                $( '#gallery' ).click( function( e ) {
+                    e.preventDefault();
+                    $.swipebox( [
+                        { href : 'http://swipebox.csag.co/mages/image-1.jpg', title : 'My Caption' },
+                        { href : 'http://swipebox.csag.co/images/image-2.jpg', title : 'My Second Caption' }
+                    ] );
+                } );
+
+          });
+    </script>
+</body>
+</html>
